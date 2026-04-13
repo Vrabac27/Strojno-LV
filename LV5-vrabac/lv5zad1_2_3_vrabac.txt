@@ -1,0 +1,26 @@
+1.
+a) Pokrenite skriptu i pogledajte dobiveni dijagram raspršenja. Što primjećujete?
+Plave i narančaste točkice se preklapaju, najviše između 400-600 ppm.
+Ako je CO2 nizak, soba je gotovo prazna, a kada je CO2 visok, soba je gotovo zauzeta.
+
+b) Koliko podatkovnih primjera sadrži učitani skup podataka? 
+Broj podatkovnih primjera: 10129
+
+c) Kakva je razdioba podatkovnih primjera po klasama?
+0    8228 - slobodna prostorija
+1    1901 - zauzeta prostorija
+
+2. 
+e) Manji K → overfitting (model pamti šum, loša generalizacija)
+Veći K → underfitting (model previše pojednostavljuje, gubi se manjinska klasa)
+
+f) Izostavljanje skaliranja - CO2 ima dosta veće brojčane vrijednosti od temperature te ona postaje nebitna, točnost pada.
+
+3.
+b)
+Mala dubina → underfitting (model prejednostavan, loša točnost)
+Velika dubina → overfitting (model pamti šum, dobar na treningu, loš na testu)
+
+c)Nema utjecaja. Stablo odlučivanja radi na principu usporedbe s pragom. Skaliranje ne mijenja odluke stabla, samo pomiče granice za isti faktor. Točnost ostaje ista.
+
+
